@@ -1,0 +1,118 @@
+/* START Regole generali */
+*{
+	margin:0;
+	padding: 0;
+}
+
+body {
+	overflow-y: scroll;
+	font-family: "Calibri", "sans-serif";
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #333;
+    background-color: #fff;
+}
+
+.main-container {
+	width: 90%;
+	margin: 50px auto;
+}
+
+.main-container h2 {
+	color: #942233;
+	font-family: 'raleway', 'Calibri', sans-serif;
+	font-size: 40px;
+	font-weight: 800;
+	text-align: left;
+	display: block;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.thick-bar {
+	height: 0.5px;
+	width: 100%;
+	max-width: 1000px;
+	background-color: #942233;
+	margin: 20px auto 30px auto;
+	border-radius: 5px;
+	display: block;
+	opacity: 0.3;
+}
+
+.hider {
+	display: none;
+}
+
+/* END Regole generali */
+
+/* START CONTACTS RULES */
+
+.contacts-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.contacts-container ul {
+	list-style-type: none;
+	font-size: 20px;
+	opacity: 0.8;
+}
+
+.contacts-list {
+	display: block;
+	width: 300px;
+}
+
+.contacts-list li {
+	padding: 5px 0;
+}
+
+.contacts-list li:first-child {
+	font-weight: bold; 
+	font-size: 28px;
+	opacity: 1;
+	margin-bottom: 10px;
+}
+
+.list-header {
+	font-weight: bold;
+	margin: 15px 0 0;
+}
+
+.contacts-list a {
+	text-decoration: none;
+	display: block;
+	color: #333;
+}
+
+.contacts-list a {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: left;
+}
+
+.contacts-list a img {
+	display: block;
+}
+
+.contacts-list a span {
+	display: block;
+}
+
+.google-maps {
+	display: block;
+	width: 700px;
+	height: 500px;
+	overflow: hidden;
+}
+
+/* END MAPS RULES */
+
+
+
