@@ -23,14 +23,12 @@ class MyNavbar extends HTMLElement {
         <nav class="navbar">
             <ul id="nav-menu">
                 <li><a href="./index.html">HOME</a></li>
-                <li><a href="./teams.html">SQUADRE</a></li>
+                <li><a href="./squadre.html">SQUADRE</a></li>
                 <li><a href="./staff.html">STAFF</a></li>
-                <li><a href="./trainings.html">ALLENAMENTI</a></li>
+                <li><a href="./allenamenti.html">ALLENAMENTI</a></li>
                 <li><a href="./sponsor.html">SPONSOR</a></li>
-                <li><a href="./contacts.html">CONTATTI</a></li>
+                <li><a href="./contatti.html">CONTATTI</a></li>
             </ul>
-
-            <a href="#" class="toggle-menu"><span></span></a>
 
         </nav>
         `;
@@ -59,6 +57,9 @@ class MyFooter extends HTMLElement {
                         </a>
                         <a href="https://www.instagram.com/gambassirugby/">
                             <img src="static/images/instagram-icon.png" alt="Instagram" width="40" height="40" style="margin-bottom: -5px;">
+                        </a>
+                        <a href="https://www.tiktok.com/@gambassirugbyasd">
+                            <img src="static/images/tiktok-icon.png" alt="TikTok" width="40" height="40" style="margin-bottom: -5px;">
                         </a>
                     </li>
                     </ul>
