@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="static/css/navbar.css" type="text/css">
     <link rel="stylesheet" href="static/css/footer.css" type="text/css">
     <link rel="stylesheet" href="static/css/mobile.css" type="text/css">
+    <link rel="stylesheet" href="static/css/training_table.css" type="text/css">
     <link rel="stylesheet" href="static/css/slideshow.css" type="text/css">
     <script type=module src="static/js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -21,15 +22,130 @@
     <my-header></my-header>
     <my-navbar></my-navbar>
 
-    <div class="hider">
     <div class="main-container">
         <h2>Allenamenti</h2>
         <div class="thick-bar"></div>
-        
-    </div>
-    
-    <my-footer></my-footer>
+
+        <!-- Table with weekdays as columns -->
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Lunedì</th>
+                    <th>Martedì</th>
+                    <th>Mercoledì</th>
+                    <th>Giovedì</th>
+                    <th>Venerdì</th>
+                    <th>Sabato</th>
+                    <th>Domenica</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Seniores</td>
+                    <td>20:30 <br> Gambassi Terme</td>
+                    <td>20:00 <br> Fibbiana</td>
+                    <td>20:30 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td>20:30 <br> Fibbiana</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Old</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>20:00 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Under 18</td>
+                    <td>19:00 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                    <td>19:00 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Under 16</td>
+                    <td>19:00 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                    <td>19:00 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Under 14</td>
+                    <td>19:00 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                    <td>19:00 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Under 12</td>
+                    <td>18:30 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                    <td>18:30 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Under 10</td>
+                    <td>18:30 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                    <td>18:30 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Under 8</td>
+                    <td>18:30 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                    <td>18:30 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Under 6</td>
+                    <td>18:00 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                    <td>18:00 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Prime Mete</td>
+                    <td></td>
+                    <td>18:00 - 18:45 <br> Gambassi Terme</td>
+                    <td></td>
+                    <td>17:00 - 17:45 / 17:45 - 18:00 <br> dove???</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
+    <my-footer></my-footer>
 </body>
+
 </html>

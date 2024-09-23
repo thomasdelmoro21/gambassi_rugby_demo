@@ -49,8 +49,8 @@ class MyFooter extends HTMLElement {
                     <li>Via Antonio Meucci, 3</li>
                     <li>Loc. Case Nuove</li>
                     <li>50050 Gambassi Terme (FI)</li>
-                    <li>Tel.</li>
-                    <li>Email: gambassirugby@gmail.com</li>
+                    <li>Tel. +39 335 5896150</li>
+                    <li>Email: info@gambassirugby.it</li>
                     <li>
                         <a href="https://www.facebook.com/gambassirugby/">
                             <img src="static/images/facebook-icon.png" alt="Facebook" width="30" height="30">

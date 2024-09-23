@@ -1,0 +1,33 @@
+/* Table Styling */
+
+.schedule-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+.schedule-table th {
+    background-color: #942233; /* Dark red for headers */
+    color: #ffffff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.schedule-table td {
+    background-color: #f2f2f2;
+    color: #333;
+    min-width: 140px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #e0e0e0; /* Light gray hover effect */
+}
+
+.schedule-table td:first-child {
+    font-weight: bold;
+}

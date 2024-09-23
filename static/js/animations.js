@@ -22,3 +22,32 @@ function showHomePage() {
 
   showSlides();
 }
+
+// TEAMS LIST ANIMATION
+
+$(document).ready(function() {
+  var teams_number = $(".teams-list").length;
+  var rotated = new Array(teams_number).fill(false);
+
+  $(".teams-item").on('click', function() {
+      var idx = $(this).index();
+
+      if (rotated[idx] == false) {
+          $(this).children(":first").css({
+              "-webkit-transform": "rotate(90deg)",
+              "-moz-transform": "rotate(90deg)",
+              "transform": "rotate(90deg)" 
+          });
+          $(this).children().eq(2).slideToggle();
+          rotated[idx] = true;
+      } else {
+          $(this).children(":first").css({
+              "-webkit-transform": "rotate(0deg)",
+              "-moz-transform": "rotate(0deg)",
+              "transform": "rotate(0deg)" 
+          });
+          $(this).children().eq(2).slideToggle();
+          rotated[idx] = false;
+      }
+  });
+});
