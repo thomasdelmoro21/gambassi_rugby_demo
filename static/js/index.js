@@ -6,7 +6,7 @@ class MyHeader extends HTMLElement {
         <div class="header-container">
             <img src="static/images/logo.jpg" width=230, height=230, alt="Gambassi Rugby" class="logo">
             <div class="title">
-                <h1 id="team"><a href="#">Gambassi Rugby</a></h1>
+                <h1 id="team"><a href="./index.html">Gambassi Rugby</a></h1>
                 <h2 id="slogan">I Cinghiali della Valdelsa</h2>
             </div>
         </div>
@@ -21,20 +21,35 @@ class MyNavbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <nav class="navbar">
-            <ul id="nav-menu">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./squadre.html">SQUADRE</a></li>
-                <li><a href="./staff.html">STAFF</a></li>
-                <li><a href="./allenamenti.html">ALLENAMENTI</a></li>
-                <li><a href="./sponsor.html">SPONSOR</a></li>
-                <li><a href="./contatti.html">CONTATTI</a></li>
-            </ul>
-
+            <div class="navbar-container">
+                <button class="navbar-toggle" id="navbarToggle">
+                    &#9776; <!-- Hamburger Icon -->
+                    Menù
+                </button>
+                <ul id="nav-menu">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./squadre.html">SQUADRE</a></li>
+                    <li><a href="./staff.html">STAFF</a></li>
+                    <li><a href="./allenamenti.html">ALLENAMENTI</a></li>
+                    <li><a href="./sponsor.html">SPONSOR</a></li>
+                    <li><a href="./contatti.html">CONTATTI</a></li>
+                </ul>
+            </div>
         </nav>
         `;
+
+        // JavaScript to toggle the menu visibility on small screens
+        const toggleButton = this.querySelector('#navbarToggle');
+        const navMenu = this.querySelector('#nav-menu');
+        
+        toggleButton.addEventListener('click', () => {
+            navMenu.classList.toggle('active'); // Toggle class to show/hide menu
+        });
     }
 }
+
 customElements.define("my-navbar", MyNavbar);
+
 
 class MyFooter extends HTMLElement {
     connectedCallback() {
@@ -66,7 +81,7 @@ class MyFooter extends HTMLElement {
                 </div>
                 <div class="footer-google-maps">
                     <h3>Dove Siamo</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.356550006367!2d10.96036567494114!3d43.57828915727448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a6b7cf7b87485%3A0xc2908f904f6164a8!2sAsd%20Gambassi%20Rugby!5e0!3m2!1sen!2sit!4v1708475905637!5m2!1sen!2sit" width="500" height="300" style="border:0;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.356550006367!2d10.96036567494114!3d43.57828915727448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a6b7cf7b87485%3A0xc2908f904f6164a8!2sAsd%20Gambassi%20Rugby!5e0!3m2!1sen!2sit!4v1708475905637!5m2!1sen!2sit" style="border:0;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             

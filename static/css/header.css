@@ -1,9 +1,8 @@
-
 /* HEADER RULES */
 
 header {
     position: relative;
-    height: 240px;
+    max-height: 240px;
 }
 
 .header-bar {
@@ -16,46 +15,39 @@ header {
 .header-container {
     display: flex;
     justify-content: left;
-    align-items: center;
     height: 220px;
     width: 95%;
-    padding-left: 40px;
-    position: absolute;
-    bottom: 0;
 }
 
-.header-container img {
-    margin-top: 20px;
+.header-container img.logo {
+    margin-left: 20px;
+    max-width: 230px; /* Ensures logo is responsive */
+    height: auto;
 }
 
 .title {
     display: block;
-    margin-left: 40px;
-    margin-top: 90px;
-    margin-bottom: auto;
-    height: 100%;
+    margin: 90px auto auto 40px;
 }
 
 #team {
     font-size: 65px;
+    height: 60px;
     font-family: 'Arial Narrow', sans-serif;
     text-decoration: none;
     display: block;
 }
 
 #team a {
-    height: 60px;
     text-decoration: none;
     color: #942233;
-    font-weight:600;
-    display: block;
+    font-weight: 600;
 }
 
 #slogan {
     font-size: 30px;
     font-family: 'Arial Narrow', sans-serif;
     font-weight: 600;
-    text-decoration: none;
     display: block;
     margin-top: 10px;
 }
@@ -65,4 +57,150 @@ header {
     position: absolute;
     right: 20px;
     top: 40px;
+    max-width: 100px;
+    height: auto;
+}
+
+/* MEDIA QUERIES */
+
+/* Small devices (max-width: 576px) */
+@media (max-width: 600px) {
+
+    /* Hide the fir-logo on small devices */
+    .fir-logo {
+        display: none;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header-container img.logo {
+        width: auto;
+        height: 150px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .title {
+        margin: 10px auto -20px auto;
+    }
+
+    #team a {
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #slogan {
+        display: none; /* Hide slogan on small devices */
+    }
+}
+
+@media (min-width: 600px) and (max-width: 650px) {
+    
+    /* Hide the fir-logo on small devices */
+    .fir-logo {
+        display: none;
+    }
+
+    .header-container img.logo {
+        max-width: 150px; /* Resize the logo for medium devices */
+        max-height: 150px;
+        margin-top: 30px;
+    }
+
+    #team {
+        font-size: 40px; /* Reduce h1 size for medium devices */
+    }
+
+    #slogan {
+        font-size: 17px; /* Adjust slogan size */
+        margin-top: -13px;
+    }
+
+    .header-container {
+        height: 160px;
+    }
+}
+
+/* Medium devices (576px to 768px) */
+@media (min-width: 651px) and (max-width: 790px) {
+    
+    /* Hide the fir-logo on small devices */
+    .fir-logo {
+        display: none;
+    }
+
+    .header-container img.logo {
+        max-width: 170px; /* Resize the logo for medium devices */
+        max-height: 170px;
+        margin-top: 20px;
+    }
+
+    #team {
+        font-size: 45px; /* Reduce h1 size for medium devices */
+    }
+
+    #slogan {
+        font-size: 20px; /* Adjust slogan size */
+        margin-top: -10px;
+    }
+
+    .header-container {
+        height: 180px;
+    }
+
+}
+
+@media (min-width:791px) and (max-width:900px) {
+    
+    /* Hide the fir-logo on small devices */
+    .fir-logo {
+        display: none;
+    }
+
+    .header-container img.logo {
+        max-width: 200px; /* Resize the logo for medium devices */
+        height: 200px;
+        margin-top: 10px;
+    }
+
+    #team {
+        font-size: 55px; /* Reduce h1 size for medium devices */
+    }
+
+    #slogan {
+        font-size: 25px; /* Adjust slogan size */
+        margin: 0;
+    }
+
+    .header-container {
+        height: 200px;
+    }
+}
+
+/* Large devices (769px to 1024px) */
+@media (min-width: 901px) and (max-width: 1024px) {
+
+    /* Hide the fir-logo on small devices */
+    .fir-logo {
+        display: none;
+    }
+
+    .header-container img.logo {
+        max-width: 220px;
+        max-height: 220px;
+    }
+}
+
+/* Extra-large devices (1025px and above) */
+@media (min-width: 1025px) {
+    /* Keep the default sizes for extra-large devices */
+    .header-container img.logo {
+        max-width: 220px;
+        max-height: 220px;
+    }
 }
