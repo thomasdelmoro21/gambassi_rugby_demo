@@ -31,3 +31,11 @@
 .schedule-table td:first-child {
     font-weight: bold;
 }
+
+.teams-item .schedule-table td {
+    min-width: 0;
+}
+
+.teams-item .schedule-table td:first-child {
+    font-weight: normal;
+}

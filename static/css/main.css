@@ -116,7 +116,7 @@ body {
 	justify-content: space-between;
 	width: 100%;
 	max-width: 1000px;
-	margin: auto;
+	margin: auto auto 50px auto;
 }
 
 .contacts-container ul {
@@ -188,6 +188,30 @@ body {
 	overflow: hidden;
 }
 
+.documents-container {
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.documents-container ul {
+	list-style-type: none;
+}
+
+.doc-border {
+	border: 2px solid #942233;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 20px 0;
+}
+
+.doc-border a {
+	text-decoration: underline;
+	color: #942233;
+	font-weight: bold;
+	font-size: 20px;
+}
+
 /* END CONTACTS RULES */
 
 
@@ -217,6 +241,13 @@ body {
 
 .team-container {
 	display: none;
+	margin: 30px 5%;
+}
+
+.team-container h4 {
+	color: #333;
+	font-size: 28px;
+	font-weight: bold;
 }
 
 /* END TEAMS RULES */

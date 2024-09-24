@@ -26,7 +26,7 @@ function showHomePage() {
 // TEAMS LIST ANIMATION
 
 $(document).ready(function() {
-  var teams_number = $(".teams-list").length;
+  var teams_number = $(".teams-list").children().length;
   var rotated = new Array(teams_number).fill(false);
 
   $(".teams-item").on('click', function() {

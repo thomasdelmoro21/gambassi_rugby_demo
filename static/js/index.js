@@ -4,7 +4,7 @@ class MyHeader extends HTMLElement {
         <header>
         <div class="header-bar"></div>
         <div class="header-container">
-            <img src="static/images/logo.jpg" width=220, height=220, alt="Gambassi Rugby" class="logo">
+            <img src="static/images/logo.jpg" width=230, height=230, alt="Gambassi Rugby" class="logo">
             <div class="title">
                 <h1 id="team"><a href="#">Gambassi Rugby</a></h1>
                 <h2 id="slogan">I Cinghiali della Valdelsa</h2>
@@ -53,13 +53,13 @@ class MyFooter extends HTMLElement {
                     <li>Email: info@gambassirugby.it</li>
                     <li>
                         <a href="https://www.facebook.com/gambassirugby/">
-                            <img src="static/images/facebook-icon.png" alt="Facebook" width="30" height="30">
+                            <img src="static/icons/facebook-icon.png" alt="Facebook" width="30" height="30">
                         </a>
                         <a href="https://www.instagram.com/gambassirugby/">
-                            <img src="static/images/instagram-icon.png" alt="Instagram" width="40" height="40" style="margin-bottom: -5px;">
+                            <img src="static/icons/instagram-icon.png" alt="Instagram" width="40" height="40" style="margin-bottom: -5px;">
                         </a>
                         <a href="https://www.tiktok.com/@gambassirugbyasd">
-                            <img src="static/images/tiktok-icon.png" alt="TikTok" width="40" height="40" style="margin-bottom: -5px;">
+                            <img src="static/icons/tiktok-icon.png" alt="TikTok" width="40" height="40" style="margin-bottom: -5px;">
                         </a>
                     </li>
                     </ul>
