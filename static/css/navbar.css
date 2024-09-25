@@ -67,6 +67,7 @@
         background-color: #942233;
         min-height: 70px;
         align-content: center;
+        -webkit-align-content: center;
     }
 
     .navbar-container {
