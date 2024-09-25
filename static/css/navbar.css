@@ -65,9 +65,8 @@
 @media (max-width: 600px) {
     .navbar {
         background-color: #942233;
-        min-height: 70px;
+        min-height: 60px;
         align-content: center;
-        -webkit-align-content: center;
     }
 
     .navbar-container {
@@ -94,7 +93,7 @@
     .navbar-toggle {
         background-color: transparent;
         color: #fff;
-        font-size: 30px;
+        font-size: 28px;
         font-weight: bold;
         border: none;
         cursor: pointer;
