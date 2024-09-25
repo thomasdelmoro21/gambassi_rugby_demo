@@ -185,13 +185,13 @@ body {
 .google-maps {
 	display: block;
 	width: 59%;
-	height: 510px;
+	max-height: 510px;
 	overflow: hidden;
 }
 
 .google-maps iframe {
 	width: 100%;
-	height: 100%;
+	height: 510px;
 }
 
 .documents-container {
@@ -332,6 +332,11 @@ body {
 		width: 100%;
 		height: 300px;
 		margin-top: 20px;
+	}
+
+	.google-maps iframe {
+		width: 100%;
+		height: 300px;
 	}
 }
 
