@@ -26,6 +26,9 @@ class MyNavbar extends HTMLElement {
                     &#9776; <!-- Hamburger Icon -->
                     Menù
                 </button>
+                <button class="navbar-close" id="navbarX">
+                    &times; <!-- Close Icon -->
+                </button>
                 <ul id="nav-menu">
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./squadre.html">SQUADRE</a></li>
@@ -38,15 +41,24 @@ class MyNavbar extends HTMLElement {
         </nav>
         `;
 
-        // JavaScript to toggle the menu visibility on small screens
-        const toggleButton = this.querySelector('#navbarToggle');
-        const navMenu = this.querySelector('#nav-menu');
-        
-        toggleButton.addEventListener('click', () => {
-            navMenu.classList.toggle('active'); // Toggle class to show/hide menu
+        const navbarToggle = document.getElementById("navbarToggle");
+        const navbarX = document.getElementById("navbarX");
+        const navMenu = document.getElementById("nav-menu");
+
+        navbarToggle.addEventListener("click", function () {
+            navbarToggle.classList.add("hidden");
+            navbarX.classList.add("show");
+            navMenu.classList.add("show");
+        });
+
+        navbarX.addEventListener("click", function () {
+            navbarToggle.classList.remove("hidden");
+            navbarX.classList.remove("show");
+            navMenu.classList.remove("show");
         });
     }
 }
+
 
 customElements.define("my-navbar", MyNavbar);
 
@@ -94,3 +106,5 @@ class MyFooter extends HTMLElement {
     }
 }
 customElements.define("my-footer", MyFooter);
+
+

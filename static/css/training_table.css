@@ -22,6 +22,7 @@
     min-width: 140px;
     padding: 15px;
     border: 1px solid #ddd;
+    font-size: 15px;
 }
 
 .schedule-table tbody tr:hover {
@@ -38,4 +39,55 @@
 
 .teams-item .schedule-table td:first-child {
     font-weight: normal;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media Queries */
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+    .schedule-table {
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .schedule-table td {
+        min-width: 0;
+        font-size: 12px;
+    }
+
+    .schedule-table th {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+
+    .schedule-table td {
+        min-width: 0;
+        font-size: 13px;
+    }
+
+    .schedule-table th {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+
+    .schedule-table td {
+        min-width: 0;
+        font-size: 14px;
+    }
+
+    .schedule-table th {
+        font-size: 18px;
+    }
 }

@@ -104,7 +104,7 @@ body {
 
 .wrapper-text {
 	display: block;
-	margin: 60px auto auto 40px;
+	margin: 60px auto auto 10%;
 }
 
 /* END HOME-PAGE RULES */
@@ -275,3 +275,104 @@ body {
 }
 
 /* END TEAMS RULES */
+
+/* START MEDIA QUERY RULES */
+
+@media (max-width: 600px) {
+
+	/* HOME PAGE */
+	.wrapper {
+		width: 100%;
+		margin: 30px 0;
+	}
+	
+	.wrapper a {
+		justify-content: space-evenly;
+		font-size: 35px;
+	}
+
+	.wrapper-text {
+		display: block;
+		margin: auto;
+		width: 50%;
+	}
+
+	.icon-circle {
+		margin: auto;
+		width: 100px;
+		height: 100px;
+		align-content: center;
+	}
+	
+	.icon-circle img {
+		display: block;
+		margin: auto;
+		position: inherit;
+		width: 60%;
+		height: auto;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+	/* HOME PAGE */
+	.wrapper {
+		width: 60%;
+	}
+	
+	.wrapper a {
+		justify-content: space-evenly;
+		font-size: 40px;
+	}
+
+	.wrapper-text {
+		display: block;
+		margin: auto;
+		width: 50%;
+	}
+
+	.icon-circle {
+		margin: 15px auto 0 5%;
+		width: 30%;
+	}
+	
+	.icon-circle img {
+		display: block;
+		margin: 25px auto;
+		position: inherit;
+	}
+}
+
+
+@media (min-width: 901px) and (max-width: 1024px) {
+
+	/* HOME PAGE */
+	.wrapper {
+		display: block;
+		width: 40%;
+		height: 150px;
+		margin: 40px 40px;
+		background-color: #942233;
+		position: relative;
+		box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+	}
+	
+	.wrapper a {
+		text-decoration: none;
+		display: flex;
+		justify-content: left;
+		width: 100%;
+		height: 100%;
+		color: white;
+		font-size: 35px;
+	}
+
+	.wrapper a {
+		font-size: 30px;
+	}
+
+	.wrapper-text {
+		display: block;
+		margin: 60px auto auto 7%;
+	}
+}

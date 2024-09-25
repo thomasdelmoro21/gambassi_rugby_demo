@@ -73,6 +73,30 @@ footer {
 
 /* END Footer */
 
+@media (max-width: 600px) {
+
+    .main-footer {
+        width: 100%;
+        padding: 10px 0 0;
+        flex-direction: column;
+    }
+
+    .footer-google-maps {
+        width: 92%;
+        margin: 10px 4%;
+    }
+
+    .footer-google-maps iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .footer-contacts {
+        margin: 10px 4%;
+        padding: 0;
+    }
+}
+
 @media (min-width: 601px) and (max-width: 1024px) {
 
     .main-footer {

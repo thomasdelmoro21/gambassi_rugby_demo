@@ -1,2 +1,2 @@
 ### Tempo impiegato
-17 ore
+24 ore
