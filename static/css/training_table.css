@@ -54,7 +54,7 @@
 @media (min-width: 600px) and (max-width: 768px) {
 
     .schedule-table {
-        overflow: scroll;
+        overflow: hidden;
         -webkit-overflow-scrolling: touch;
     }
 
