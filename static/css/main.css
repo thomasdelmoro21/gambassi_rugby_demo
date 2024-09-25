@@ -19,8 +19,7 @@ body {
 }
 
 .main-container p {
-	width: 100%;
-	max-width: 1000px;
+	width: 85%;
 	margin: 10px auto;
 	font-size: 18px;
 	color: #333;
@@ -33,15 +32,13 @@ body {
 	font-weight: 800;
 	text-align: left;
 	display: block;
-	width: 100%;
-	max-width: 1000px;
+	width: 85%;
 	margin: auto;
 }
 
 .thick-bar {
 	height: 0.5px;
-	width: 100%;
-	max-width: 1000px;
+	width: 85%;
 	background-color: #942233;
 	margin: 20px auto 30px auto;
 	border-radius: 5px;
@@ -114,8 +111,7 @@ body {
 .contacts-container {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-	max-width: 1000px;
+	width: 85%;
 	margin: auto auto 50px auto;
 }
 
@@ -195,8 +191,7 @@ body {
 }
 
 .documents-container {
-	width: 100%;
-	max-width: 1000px;
+	width: 85%;
 	margin: auto;
 }
 
@@ -228,8 +223,7 @@ body {
 /* START TEAMS RULES */
 
 .teams-container {
-	width: 100%;
-	max-width: 1000px;
+	width: 85%;
 	margin: auto;
 }
 
