@@ -1,2 +1,2 @@
 ### Tempo impiegato
-24 ore
+36 ore
